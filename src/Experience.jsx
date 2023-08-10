@@ -11,7 +11,7 @@ export default function Experience() {
 
       <ambientLight intensity={1} />
 
-      <fog attach="fog" args={["#1F3E78", 15, - 1]} />
+      <fog attach="fog" args={["#1F3E78", 15, - 5]} />
       <Rays />
     </>
   );
