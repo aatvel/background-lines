@@ -15,7 +15,7 @@ export const Rays = () => {
     nNumber: {
       value: 0.8,
       min: 0.0,
-      max: 5,
+      max: 2.2,
       step: 0.01,
     },
   });
