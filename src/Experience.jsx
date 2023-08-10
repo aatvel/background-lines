@@ -9,9 +9,7 @@ export default function Experience() {
     <>
       <color args={["#1F3E78"]} attach="background" />
 
-      <ambientLight intensity={1} />
 
-      <fog attach="fog" args={["#1F3E78", 15, - 5]} />
       <Rays />
     </>
   );
