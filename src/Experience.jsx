@@ -1,24 +1,17 @@
-import { Environment, Shadow, useGLTF } from "@react-three/drei";
+import { useRef, useEffect } from "react";
 import { Rays } from "./Rays";
-import { EffectComposer, Vignette } from "@react-three/postprocessing";
-import { BlendFunction } from "postprocessing";
 
 export default function Experience() {
+  useEffect((state, delta) => {
+    console.log(delta);
+  }, []);
   return (
     <>
-      <color args={["#243B74"]} attach="background" />
-      {/* <Environment preset="city" /> */}
-      <ambientLight intensity={0.5} />
+      <color args={["#000000"]} attach="background" />
 
-      {/* <EffectComposer>
-        <Vignette
-          offset={0} // vignette offset
-          darkness={0.5} // vignette darkness
-          eskil={false} // Eskil's vignette technique
-          blendFunction={BlendFunction.NORMAL} // blend mode
-        />
-      </EffectComposer> */}
-      <fog attach="fog" args={["#172547", 16, - 4.5]} />
+      <ambientLight intensity={1} />
+
+      <fog attach="fog" args={["#000000", 16, - 5]} />
       <Rays />
     </>
   );
